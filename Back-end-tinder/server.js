@@ -5,7 +5,6 @@ import Cors from "cors"
 import Cards from './dbCards.js'
 dotenv.config()
 //app config
-
 const app=express()
 const port=process.env.PORT || 8001
 const connectUrl=`mongodb+srv://admin:${process.env.PASSWORD}@cluster0.pishfig.mongodb.net/?retryWrites=true&w=majority`

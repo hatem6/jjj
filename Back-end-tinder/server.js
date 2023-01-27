@@ -2,6 +2,7 @@ import express from "express"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
 import Cors from "cors"
+import Cards from './dbCards.js'
 dotenv.config()
 //app config
 
@@ -17,9 +18,6 @@ mongoose.connect(connectUrl,{
 })
 const db=mongoose.connection
 // Api endpoints
-app.get("/",(req,res)=>{
-    res.status(200).send("hello world")
-})
 
 //Listeners
 app.listen(port,()=>{console.log(`listening on port : ${port} `)})

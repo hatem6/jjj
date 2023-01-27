@@ -16,7 +16,7 @@ export default function Images() {
       ]
   return (
     <div>
-        <div className=' block ml-[38%] mt-[50px]'>
+        <div className=' lg:ml-[500px] block md:ml-[350px] sm:ml-[200px] ml-[20px] mt-[50px]'>
             {profiles.map(person=>{
                 return (
                     <TinderCard key={person.id} onSwipe={onSwipe} onCardLeftScreen={() => onCardLeftScreen('fooBar')} preventSwipe={['up', 'down']}>
